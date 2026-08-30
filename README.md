@@ -13,17 +13,18 @@ Crazyflie 2.X quadrotor tracking an agile **figure-8**, then compared:
 
 ```
 code/
-  trajectory.py     figure-8 reference (lap time sets agility)
+  trajectory.py     figure-8 reference 
   controller.py     cascaded controller + MLP / NEAT policies
-  task.py           CtrlAviary wrapper: observation, reward, rollout
+  task.py           task wrapper
   evolve_cmaes.py   CMA-ES driver (pycma)
   evolve_neat.py    NEAT driver (neat-python)
   neat_config.ini   NEAT configuration
-  experiment.py     parallel study harness (frontier + sensitivity)
+  experiment.py     parallel study 
   analyze.py        figures + summary tables
   results_io.py     save/load results
-results/            per-run results (pickles + JSON, ~1 MB, tracked)
-figures/            generated figures
+report/             contains the report
+results/            per-run results
+figures/            report figures
 ```
 
 ## Setup (Linux / WSL2, Python 3.10)
