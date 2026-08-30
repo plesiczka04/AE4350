@@ -1,12 +1,4 @@
-"""Experiment harness: builds run specifications, executes them in parallel
-(one PyBullet process per worker), and saves each result as it completes.
 
-Two studies:
-  * frontier    -- agility-safety trade-off: sweep trajectory lap time (agility)
-                   for both methods across seeds.
-  * sensitivity -- vary CMA-ES sigma0, population size and hidden size, and NEAT
-                   population size, at a fixed nominal agility, across seeds.
-"""
 from __future__ import annotations
 
 import multiprocessing as mp

@@ -1,11 +1,4 @@
-"""NEAT driver: evolve controller *topology and weights* against the same task.
 
-NEAT (Stanley & Miikkulainen 2002) starts from minimal fully-connected networks
-and complexifies by adding nodes/connections under speciation. It optimises the
-identical fitness (penalised tracking error) used by CMA-ES, through the identical
-cascaded controller, so any performance difference is attributable to the
-optimiser / representation, not the task.
-"""
 from __future__ import annotations
 
 import random

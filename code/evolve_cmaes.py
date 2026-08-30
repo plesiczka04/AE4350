@@ -1,11 +1,4 @@
-"""CMA-ES driver: evolve the flat weight vector of a fixed-topology MLP.
 
-CMA-ES (Hansen 2016) is a state-of-the-art derivative-free optimiser that adapts
-a full covariance matrix over the search distribution -- a form of self-adaptation
-in *parameter* space. Here it optimises the ~hundreds of weights of an MLP flight
-controller. CMA-ES minimises, so the objective is the (penalised) mean tracking
-error; we negate to report fitness.
-"""
 from __future__ import annotations
 
 import numpy as np

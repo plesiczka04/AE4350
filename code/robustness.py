@@ -1,12 +1,4 @@
-"""Robustness study: how do *trained* champions cope with disturbances they never
-saw during evolution? This probes generalisation and the reality gap
-(cf. Jakobi et al. 1995) without any retraining -- champions are simply re-flown under
-(i) actuation noise (a wind/motor-mismatch-like disturbance on the motor commands) and
-(ii) sensor noise (a noisy state estimate on the observation), at increasing magnitude.
 
-Fast: it re-flies the ~10 nominal-lap champions under a few disturbance levels with
-several noise realisations each, and saves an aggregated summary for plotting.
-"""
 from __future__ import annotations
 
 import pickle

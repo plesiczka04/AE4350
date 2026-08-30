@@ -1,24 +1,4 @@
-"""Neural controllers for the quadrotor, in a cascaded architecture.
 
-Learning to fly by emitting four raw motor RPMs directly is dominated by attitude
-instability: any small motor asymmetry integrates into a tumble within ~3 s, so
-the whole neighbourhood of the hover prior crashes and evolution gets no gradient.
-
-Real agile-flight stacks (and the line of work this project is inspired by) instead
-use a *cascaded* controller: a high-level policy commands total thrust and a desired
-attitude, and a fast inner attitude/rate loop realises it. We adopt exactly this:
-
-    evolved network:  obs(12) -> raw(3) = [thrust_cmd, roll_cmd, pitch_cmd]
-    fixed inner loop: (thrust, desired attitude, measured attitude+rates) -> 4 RPMs
-
-The inner loop uses the Crazyflie 2.X attitude-PD gains and mixer matrix shipped
-with gym-pybullet-drones (DSLPIDControl), so it is physically faithful to the drone.
-The network still learns the entire *feedback policy* mapping tracking error to a
-setpoint -- the hard, interesting part of agile flight -- while the inner loop
-guarantees the vehicle stays upright, making the search tractable for both CMA-ES
-and NEAT. The two families share the ``act(obs) -> rpms`` interface so one rollout
-scores both.
-"""
 from __future__ import annotations
 
 import numpy as np

@@ -1,4 +1,3 @@
-"""Persist and reload run results (result dicts from the evolve_* drivers)."""
 from __future__ import annotations
 
 import json

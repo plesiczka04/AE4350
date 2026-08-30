@@ -1,7 +1,4 @@
-"""Model-based reference: the library's tuned DSL cascaded PID controller flown on
-the same figure-8 at every agility level, scored identically to the evolved champions.
-This contextualises the evolved controllers' accuracy against an expert baseline.
-"""
+
 from __future__ import annotations
 
 import pickle
