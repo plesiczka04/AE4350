@@ -1,0 +1,19 @@
+{
+  "method": "neat",
+  "seed": 3,
+  "best_fitness": -0.28343725330123976,
+  "rmse_survived": 0.3565081501027023,
+  "crashed": false,
+  "completion": 1.0,
+  "peak_speed": 3.4983330221719418,
+  "generations": 200,
+  "evaluations": 4800,
+  "task_kwargs": {
+    "radius": 2.5,
+    "altitude": 1.0,
+    "n_laps": 2.0,
+    "lap_time": 6.35
+  },
+  "hidden": null,
+  "popsize": 24
+}

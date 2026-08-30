@@ -1,0 +1,21 @@
+{
+  "method": "cmaes",
+  "seed": 1,
+  "best_fitness": -0.17448497274229682,
+  "rmse_survived": 0.24196946187236182,
+  "crashed": false,
+  "completion": 1.0,
+  "peak_speed": 3.001947931188085,
+  "generations": 200,
+  "evaluations": 4800,
+  "task_kwargs": {
+    "radius": 2.5,
+    "altitude": 1.0,
+    "n_laps": 2.0,
+    "lap_time": 7.4
+  },
+  "hidden": [
+    16
+  ],
+  "popsize": 24
+}

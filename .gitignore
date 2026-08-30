@@ -1,0 +1,15 @@
+# Python caches / build junk
+__pycache__/
+*.pyc
+logs/
+neat-checkpoint-*
+# Virtual environments
+.venv/
+ae4350env/
+# Editor / OS / tooling
+.DS_Store
+Thumbs.db
+
+# Note: result pickles (results/**/*.pkl, ~1 MB total) are intentionally tracked so
+# the repo is self-contained: clone -> `python -m code.analyze` regenerates every
+# figure. They cost ~16 h to reproduce from scratch.
